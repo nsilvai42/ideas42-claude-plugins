@@ -1,0 +1,15 @@
+{
+  "name": "connector-automation",
+  "version": "0.1.0",
+  "description": "Optional connector-dependent automation wrappers for Figma, Miro, Notion, and MCP-building work.",
+  "author": {
+    "name": "Nikolassilva"
+  },
+  "keywords": [
+    "connectors",
+    "automation",
+    "mcp",
+    "skills",
+    "enterprise"
+  ]
+}

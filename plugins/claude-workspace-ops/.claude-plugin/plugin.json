@@ -1,0 +1,15 @@
+{
+  "name": "claude-workspace-ops",
+  "version": "0.1.0",
+  "description": "Migration, project setup, file hygiene, plugin creation, skill lookup, and artifact-review workflows.",
+  "author": {
+    "name": "Nikolassilva"
+  },
+  "keywords": [
+    "workspace",
+    "migration",
+    "review",
+    "skills",
+    "enterprise"
+  ]
+}

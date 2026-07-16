@@ -1,0 +1,17 @@
+{
+  "skill_name": "memory-import",
+  "evals": [
+    {
+      "id": "fresh-start-no-export",
+      "prompt": "I've been using ChatGPT for work for about a year, but I don't want to upload my whole export. Help me bring over only the essentials so Claude knows how to work with me.",
+      "expected_output": "Should recommend a fresh-start or curated prompt-based migration, give a small batch of targeted prompts, and avoid asking for a full export.",
+      "files": []
+    },
+    {
+      "id": "gemini-no-memory",
+      "prompt": "I'm trying to migrate from Gemini. Gemini says it doesn't have access to memory, but I know it has talked about my Gems and work projects in other chats. What should I do?",
+      "expected_output": "Claude should explain that the first disclaimer may be generic or surface-dependent, give one bounded challenge prompt with concrete examples and source labels, avoid saying the assistant is lying, avoid asking for hidden system data, and then switch to fresh-start or project-based migration if the answer remains thin.",
+      "files": []
+    }
+  ]
+}

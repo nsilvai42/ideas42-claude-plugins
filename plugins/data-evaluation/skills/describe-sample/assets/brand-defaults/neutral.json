@@ -1,0 +1,50 @@
+{
+  "name": "neutral",
+  "version": "1.0.0",
+  "fonts": {
+    "primary": "Calibri",
+    "fallback": ["Arial", "sans-serif"],
+    "weights": { "regular": 400, "semibold": 600, "bold": 700 },
+    "font_file_dir": null
+  },
+  "palette": {
+    "primary":       "#222222",
+    "primary_dark":  "#111111",
+    "primary_light": "#555555",
+    "accent":        "#0066CC",
+    "accent_alt":    "#117755",
+    "warning":       "#CC4400",
+    "warning_light": "#FFAA66",
+    "neutral_text":  "#333333",
+    "neutral_grid":  "#E0E0E0",
+    "neutral_muted": "#777777",
+    "background":    "#FFFFFF"
+  },
+  "semantic": {
+    "title":              "primary",
+    "highlight":          "accent",
+    "positive":           "accent_alt",
+    "negative":           "warning",
+    "body_text":          "neutral_text",
+    "grid_lines":         "neutral_grid",
+    "footer_text":        "neutral_muted",
+    "chart_bar_primary":  "primary",
+    "chart_bar_accent":   "accent",
+    "treatment_arm_colors": ["primary", "accent", "warning_light", "accent_alt"]
+  },
+  "doc": {
+    "heading_color":      "primary",
+    "subheading_color":   "accent_alt",
+    "body_font_size_pt":  11,
+    "title_font_size_pt": 22,
+    "h1_font_size_pt":    16,
+    "h2_font_size_pt":    13,
+    "page_size":          "us_letter",
+    "margins_inches":     1.0
+  },
+  "footer": {
+    "include_org_line":     false,
+    "org_line_text":        "",
+    "include_page_numbers": true
+  }
+}

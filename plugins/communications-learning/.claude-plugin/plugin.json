@@ -1,0 +1,15 @@
+{
+  "name": "communications-learning",
+  "version": "0.1.0",
+  "description": "Optional internal communications and tutoring/coaching workflows for updates and learning support.",
+  "author": {
+    "name": "Nikolassilva"
+  },
+  "keywords": [
+    "communications",
+    "learning",
+    "writing",
+    "skills",
+    "enterprise"
+  ]
+}

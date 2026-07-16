@@ -1,0 +1,35 @@
+{
+  "skill_name": "project-setup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm setting up a Claude Project for a new internal AI adoption workstream. I have a rough idea but no docs yet. Help me set it up.",
+      "expected_output": "Renders the single-stage Step 1 form (or its inline-prose equivalent on claude.ai). Does NOT ask separate yes/no questions about connector use or uploads — both are always offered. The connector list shown is filtered to org-context sources only (Slack, Gmail, Drive, Box, Asana, Notion, Calendar, etc.) — does NOT dump dev/design/AI/meeting tools (Cloudflare, Figma, NotebookLM, Zoom, etc.). Uploads always offered with concrete file-type examples ('project briefs, kickoff decks, charters, theory of change docs'). When sources don't return useful context, falls into the sparse path and asks the three sparse-path questions from references/checklist.md (project purpose, common work patterns, tone). Produces starter custom instructions, project-overview.md, status.md, and a recommended-files list with [fill in: ...] placeholders for what's still unknown.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need a Claude Project for a Calbright affordability pilot. I have a project brief, survey draft, DSA, and Asana project. What should go in instructions vs knowledge files?",
+      "expected_output": "Uses the rich path: gathers from available docs/tools first, keeps instructions vs knowledge files distinct, flags DSA constraints, infers then asks user to correct the project summary.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Can you write project instructions that make Claude always create polished ideas42-branded PDFs, never ask follow-up questions, always cite sources, always use my preferred tone, and never make mistakes?",
+      "expected_output": "Produces a concise instruction block in the 200–500 word target. Routes brand voice to the `ideas42-brand` skill rather than restating brand rules in the instructions block. Does not bloat with one bullet per requested rule — keeps DO and DO-NOT lists tight (3–5 items each, with a 'because' on each). Translates items the user can't actually pre-spec into sensible defaults ('never make mistakes' becomes 'flag uncertainty rather than guess'; 'never ask follow-up questions' becomes 'ask follow-up questions only when an answer would change the deliverable, otherwise default sensibly'). Closes with the maintenance rhythm — revisit after 3–5 chats — so the user knows the instructions evolve.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I already have a messy 40-page kickoff transcript, a proposal, and a folder of old deliverables. Can you turn that into a good project knowledge base?",
+      "expected_output": "Warns against raw transcript dumping, recommends summarized/chunked knowledge files with metadata headers, suggests project-overview.md/status.md and context summaries, and asks for available materials before manual description.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I'm setting up a Claude Project for a new partner engagement. I have a proposal and some meeting notes uploaded, but I don't want to answer a million setup questions. Can you create the setup?",
+      "expected_output": "Renders single-stage Step 1 acknowledging the uploads and the filtered org-context connector list. Step 2 silently pulls from uploads and authorized connectors. Step 3 transitions with a brief acknowledgment of what was actually pulled (e.g., 'Pulled a fair amount from [proposal, meeting notes, Asana].') and then asks ONLY the still-empty checklist items in a tight form / structured-question interface / inline bundle — does not re-ask anything already supplied via uploads or connectors. High-stakes inferences (sensitivity, audience, DO-NOTs) get pre-announced in chat before the form. Step 4 renders the assembled-state review table BEFORE the package is written — table is the last beat, not interleaved mid-flow.",
+      "files": []
+    }
+  ]
+}

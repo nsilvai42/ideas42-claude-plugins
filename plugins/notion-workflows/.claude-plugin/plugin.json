@@ -1,0 +1,15 @@
+{
+  "name": "notion-workflows",
+  "version": "0.1.0",
+  "description": "Optional Notion-backed capture, meeting prep, research documentation, and spec-to-implementation workflows.",
+  "author": {
+    "name": "Nikolassilva"
+  },
+  "keywords": [
+    "notion",
+    "documentation",
+    "knowledge",
+    "skills",
+    "enterprise"
+  ]
+}

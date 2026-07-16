@@ -1,0 +1,21 @@
+{
+  "name": "deep-research-trigger-checks",
+  "cases": [
+    {
+      "prompt": "Create Deep Research prompts for a literature scan on text-message reminders and benefits enrollment.",
+      "expect": "phase-1"
+    },
+    {
+      "prompt": "I have three cited research reports. Extract material claims and build a verification ledger.",
+      "expect": "phase-2"
+    },
+    {
+      "prompt": "Here is a verified citation ledger and correction notes. Synthesize the final evidence report.",
+      "expect": "phase-3"
+    },
+    {
+      "prompt": "Summarize this one article in a paragraph, no ledger.",
+      "expect": "off-ramp-confirmation"
+    }
+  ]
+}

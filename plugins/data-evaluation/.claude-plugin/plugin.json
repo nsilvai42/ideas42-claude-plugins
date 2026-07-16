@@ -1,0 +1,15 @@
+{
+  "name": "data-evaluation",
+  "version": "0.1.0",
+  "description": "Dataset cleaning, sample description, lightweight CSV summaries, analysis verification, and HTML visualization.",
+  "author": {
+    "name": "Nikolassilva"
+  },
+  "keywords": [
+    "data",
+    "evaluation",
+    "analysis",
+    "skills",
+    "enterprise"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "name": "ideas42-claude-plugins",
+  "owner": {
+    "name": "Niko Silva",
+    "email": "nsilva@ideas42.org"
+  },
+  "metadata": {
+    "description": "Claude plugins for ideas42 team members",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-workspace-ops",
+      "source": "./plugins/claude-workspace-ops",
+      "description": "Migration, project setup, file hygiene, plugin creation, skill lookup, and artifact-review workflows.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "pdf-viewer",
+      "source": "./plugins/pdf-viewer",
+      "description": "View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures \u2014 then download the annotated copy.",
+      "version": "0.2.0"
+    },
+    {
+      "name": "productivity",
+      "source": "./plugins/productivity",
+      "description": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track.",
+      "version": "1.3.0"
+    },
+    {
+      "name": "cowork-plugin-management",
+      "source": "./plugins/cowork-plugin-management",
+      "description": "Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works.",
+      "version": "0.2.2"
+    },
+    {
+      "name": "claude-admin-utilities",
+      "source": "./plugins/claude-admin-utilities",
+      "description": "Optional memory consolidation, Cowork setup, scheduling, plugin creation, and skill lookup helpers.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "product-management",
+      "source": "./plugins/product-management",
+      "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape.",
+      "version": "1.2.0"
+    },
+    {
+      "name": "research-evidence",
+      "source": "./plugins/research-evidence",
+      "description": "Research, evidence review, writing, concept mapping, agent council, and journey mapping workflows.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "slack-by-salesforce",
+      "source": "./plugins/slack-by-salesforce",
+      "description": "Official Slack MCP server for interactive and collaborative workflows. Surface insights, draft messages, and engage teams directly within Slack from Claude Cowork.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "marketing",
+      "source": "./plugins/marketing",
+      "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+      "version": "1.2.0"
+    },
+    {
+      "name": "engineering",
+      "source": "./plugins/engineering",
+      "description": "Streamline engineering workflows \u2014 standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone.",
+      "version": "1.2.0"
+    },
+    {
+      "name": "airtable",
+      "source": "./plugins/airtable",
+      "description": "Airtable is the database and operations layer for your agents \u2014 whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share \u2014 plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, and Databricks. Makes Claude fluent in Airtable: bases and schema, records, and collaboration UI. Bundles the official Airtable MCP server.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "brand-systems",
+      "source": "./plugins/brand-systems",
+      "description": "Brand rules for ideas42, Year Up, Calbright, Bottom Line, and SBNC/Navvy artifacts.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "notion-workflows",
+      "source": "./plugins/notion-workflows",
+      "description": "Optional Notion-backed capture, meeting prep, research documentation, and spec-to-implementation workflows.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "communications-learning",
+      "source": "./plugins/communications-learning",
+      "description": "Optional internal communications and tutoring/coaching workflows for updates and learning support.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "figma-web-dev",
+      "source": "./plugins/figma-web-dev",
+      "description": "Figma implementation, Code Connect, design-system rules, React review, UI review, and visual polish.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "document-production",
+      "source": "./plugins/document-production",
+      "description": "Optional document, Word, PDF, PowerPoint, Excel, and theme support for file-heavy workflows.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "desktop-commander",
+      "source": "./plugins/desktop-commander",
+      "description": "MCP server for terminal commands, process management, and file operations across text files, code, PDF, DOCX, Excel, images, and structured data",
+      "version": "0.2.0"
+    },
+    {
+      "name": "connector-automation",
+      "source": "./plugins/connector-automation",
+      "description": "Optional connector-dependent automation wrappers for Figma, Miro, Notion, and MCP-building work.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "data",
+      "source": "./plugins/data",
+      "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders.",
+      "version": "1.1.0"
+    },
+    {
+      "name": "figma",
+      "source": "./plugins/figma",
+      "description": "Plugin that includes the Figma MCP server and Skills for common workflows",
+      "version": "2.2.81"
+    },
+    {
+      "name": "data-evaluation",
+      "source": "./plugins/data-evaluation",
+      "description": "Dataset cleaning, sample description, lightweight CSV summaries, analysis verification, and HTML visualization.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "enterprise-search",
+      "source": "./plugins/enterprise-search",
+      "description": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps.",
+      "version": "1.3.0"
+    },
+    {
+      "name": "learn-with-coursera",
+      "source": "./plugins/learn-with-coursera",
+      "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step \u2014 a course, hands-on project, short video, or live roleplay \u2014 then maps a path forward. Requires the Coursera connector for catalog tools."
+    },
+    {
+      "name": "design",
+      "source": "./plugins/design",
+      "description": "Accelerate design workflows \u2014 critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+      "version": "1.2.0"
+    },
+    {
+      "name": "artifact-production",
+      "source": "./plugins/artifact-production",
+      "description": "Optional web, canvas, theme, GIF, and algorithmic-art production skills for richer deliverables.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "miro",
+      "source": "./plugins/miro",
+      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+      "version": "1.3.0"
+    }
+  ]
+}
