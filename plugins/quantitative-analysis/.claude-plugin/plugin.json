@@ -1,0 +1,15 @@
+{
+  "name": "quantitative-analysis",
+  "version": "0.2.0",
+  "description": "Quantitative analysis used across all IDEAS stages: data cleaning, sample description, CSV profiling, verification of AI-generated analyses, and visualization.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "data",
+    "evaluation",
+    "analysis",
+    "skills",
+    "enterprise"
+  ]
+}

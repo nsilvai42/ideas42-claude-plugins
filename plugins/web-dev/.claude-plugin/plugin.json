@@ -1,0 +1,15 @@
+{
+  "name": "web-dev",
+  "version": "0.2.0",
+  "description": "Web development with Figma: design-to-code, design-system rules, React performance, and UI/UX reviews.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "figma",
+    "frontend",
+    "design",
+    "skills",
+    "enterprise"
+  ]
+}

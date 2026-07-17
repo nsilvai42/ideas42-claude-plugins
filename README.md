@@ -1,6 +1,6 @@
 # ideas42 Claude Plugins
 
-A Claude plugin marketplace of custom plugins built at ideas42.
+A Claude plugin marketplace of custom plugins built at ideas42, grouped by craft. Most crafts serve multiple stages of the IDEAS methodology (Identification, Diagnosis, Engineer, Assess, Scale & Sustain), so plugins are organized around what you're doing, not which stage you're in. Stage-specific methodology plugins (behavioral-diagnosis, intervention-design, experimental-design, scale-sustain) are planned — see [RECOMMENDATIONS.md](RECOMMENDATIONS.md).
 
 ## Install (individuals)
 
@@ -15,25 +15,24 @@ In Claude Code or Cowork:
 
 Admins can add this repo as an organization plugin marketplace and choose which plugins members see, install themselves, or get auto-installed: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization).
 
-## Plugins in this marketplace (11)
+## Plugins (10)
 
-| Plugin | What it does |
-|--------|--------------|
-| **brand-systems** | ideas42, SBNC, Bottom Line, Calbright, and Year Up brand skills — apply client brand guidelines to any deliverable. |
-| **artifact-production** | Algorithmic art, canvas design, artifact building, themes, image enhancement. |
-| **claude-admin-utilities** | Plugin creation, memory consolidation, scheduling, Cowork setup, skill lookup. |
-| **claude-workspace-ops** | File organizing, project setup, memory import, review consoles/councils. |
-| **communications-learning** | Internal communications and learning-coach skills. |
-| **connector-automation** | Figma, Miro, and Notion automation workflows plus MCP building. |
-| **data-evaluation** | Data cleaning, sample description, CSV profiling, analysis verification, visualization. |
-| **document-production** | Word, Excel, PowerPoint, PDF production with doc co-authoring and themes. |
-| **figma-web-dev** | Figma-to-code, design-system rules, React performance, UI/UX reviews. |
-| **notion-workflows** | Notion knowledge capture, meeting intelligence, research documentation, spec-to-implementation. |
-| **research-evidence** | Deep research, agent councils, article extraction, concept and journey mapping, research writing. |
+| Plugin | Craft | Skills |
+|--------|-------|--------|
+| **brand-systems** | Partner-facing deliverable branding | ideas42, SBNC, Bottom Line, Calbright, Year Up brand guidelines |
+| **ideas42-comms** | Writing in the ideas42 voice | i42-copy-editor, internal-communications, learning-coach |
+| **research-evidence** | Collecting, synthesizing, compiling information | deep-research, article-extractor, concept-map, research-writer, agent-council |
+| **qualitative-research** | Qualitative fieldwork (all stages) | journey-mapping (user-testing, interview-guide, qualitative-synthesis planned) |
+| **quantitative-analysis** | Quantitative analysis (all stages) | data-cleaning, describe-sample, quick-csv-summary, verify-data-analysis, visualize |
+| **deliverables** | Producing polished outputs | doc-coauthoring, artifacts-builder, web-artifacts-builder, theme-factory, canvas-design, visual-design-foundations, image-enhancer, algorithmic-art, slack-gif-creator |
+| **claude-ops** | Claude workspace operations | project-setup, file-organizer, memory-import, memory-consolidation, schedule, setup-cowork, create-plugin, skill-lookup, review-console, review-council |
+| **web-dev** | Web development with Figma | figma-code-connect, figma-design-system-rules, figma-implement-design, react-performance, ui-ux-design-review, web-ui-review |
+| **connector-automation** | Automating connected tools | figma-automation, miro-automation, notion-automation, mcp-builder |
+| **notion-workflows** | Notion-based workflows | knowledge-capture, meeting-intelligence, research-documentation, spec-to-implementation |
 
 ## Third-party plugins (not mirrored here)
 
-These were previously mirrored but are maintained by their vendors — install them from the in-app plugin directory or their official repos so you get updates:
+Maintained by their vendors — install from the in-app plugin directory or their official repos so you get updates:
 
 | Plugin | Author | Official source |
 |--------|--------|-----------------|
@@ -45,9 +44,9 @@ These were previously mirrored but are maintained by their vendors — install t
 | desktop-commander | Desktop Commander | [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) |
 | learn-with-coursera | Coursera | [coursera/skills](https://github.com/coursera/skills) |
 
-Anthropic's broader curated directory (including partner plugins) is at [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official); admins can add `anthropics/knowledge-work-plugins` as a second organization marketplace to distribute the Anthropic plugins alongside this one.
+## Conventions
 
-## Notes
-
-- Plugins that bundle MCP connectors (`.mcp.json`) require each user to authenticate those connectors on first use.
-- Snapshot date for plugin contents: 2026-07-16.
+- One craft per plugin; each skill lives in exactly one plugin.
+- Stage-specific methodology (b-mapping, testing protocols) goes in a stage plugin; reusable craft (interviews, data cleaning, deliverables) goes in a craft plugin.
+- Bump the plugin version and marketplace version with every change so installed copies refresh.
+- Plugins that require connectors note it in their description; users authenticate on first use.

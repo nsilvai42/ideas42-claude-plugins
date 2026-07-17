@@ -1,9 +1,9 @@
 {
   "name": "research-evidence",
-  "version": "0.1.0",
-  "description": "Research, evidence review, writing, concept mapping, agent council, and journey mapping workflows.",
+  "version": "0.2.0",
+  "description": "Collect, synthesize, and compile information: evidence scans, deep research, literature extraction, concept maps, source-backed writing, and multi-agent review.",
   "author": {
-    "name": "Nikolassilva"
+    "name": "ideas42"
   },
   "keywords": [
     "research",

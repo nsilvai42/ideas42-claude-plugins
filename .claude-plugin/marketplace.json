@@ -5,16 +5,10 @@
     "email": "nsilva@ideas42.org"
   },
   "metadata": {
-    "description": "Custom Claude plugins built at ideas42",
-    "version": "1.1.0"
+    "description": "Custom Claude plugins built at ideas42, grouped by craft",
+    "version": "2.0.0"
   },
   "plugins": [
-    {
-      "name": "artifact-production",
-      "source": "./plugins/artifact-production",
-      "description": "Optional web, canvas, theme, GIF, and algorithmic-art production skills for richer deliverables.",
-      "version": "0.1.0"
-    },
     {
       "name": "brand-systems",
       "source": "./plugins/brand-systems",
@@ -22,22 +16,10 @@
       "version": "0.1.0"
     },
     {
-      "name": "claude-admin-utilities",
-      "source": "./plugins/claude-admin-utilities",
-      "description": "Optional memory consolidation, Cowork setup, scheduling, plugin creation, and skill lookup helpers.",
-      "version": "0.1.0"
-    },
-    {
-      "name": "claude-workspace-ops",
-      "source": "./plugins/claude-workspace-ops",
-      "description": "Migration, project setup, file hygiene, plugin creation, skill lookup, and artifact-review workflows.",
-      "version": "0.1.0"
-    },
-    {
-      "name": "communications-learning",
-      "source": "./plugins/communications-learning",
-      "description": "Optional internal communications and tutoring/coaching workflows for updates and learning support.",
-      "version": "0.1.0"
+      "name": "claude-ops",
+      "source": "./plugins/claude-ops",
+      "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
+      "version": "0.2.0"
     },
     {
       "name": "connector-automation",
@@ -46,22 +28,16 @@
       "version": "0.1.0"
     },
     {
-      "name": "data-evaluation",
-      "source": "./plugins/data-evaluation",
-      "description": "Dataset cleaning, sample description, lightweight CSV summaries, analysis verification, and HTML visualization.",
-      "version": "0.1.0"
+      "name": "deliverables",
+      "source": "./plugins/deliverables",
+      "description": "Produce polished deliverables: HTML artifacts and dashboards, document co-authoring, visual design foundations, themes, image enhancement, and creative assets.",
+      "version": "0.2.0"
     },
     {
-      "name": "document-production",
-      "source": "./plugins/document-production",
-      "description": "Optional document, Word, PDF, PowerPoint, Excel, and theme support for file-heavy workflows.",
-      "version": "0.1.0"
-    },
-    {
-      "name": "figma-web-dev",
-      "source": "./plugins/figma-web-dev",
-      "description": "Figma implementation, Code Connect, design-system rules, React review, UI review, and visual polish.",
-      "version": "0.1.0"
+      "name": "ideas42-comms",
+      "source": "./plugins/ideas42-comms",
+      "description": "Communicate in the ideas42 voice: internal communications formats, copy editing with ideas42 terminology and style, and learning support for team members.",
+      "version": "0.2.0"
     },
     {
       "name": "notion-workflows",
@@ -70,10 +46,28 @@
       "version": "0.1.0"
     },
     {
+      "name": "qualitative-research",
+      "source": "./plugins/qualitative-research",
+      "description": "Qualitative fieldwork used across all IDEAS stages. Journey mapping today; user testing, interview guides, and qualitative synthesis planned \u2014 see RECOMMENDATIONS.md.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "quantitative-analysis",
+      "source": "./plugins/quantitative-analysis",
+      "description": "Quantitative analysis used across all IDEAS stages: data cleaning, sample description, CSV profiling, verification of AI-generated analyses, and visualization.",
+      "version": "0.2.0"
+    },
+    {
       "name": "research-evidence",
       "source": "./plugins/research-evidence",
-      "description": "Research, evidence review, writing, concept mapping, agent council, and journey mapping workflows.",
-      "version": "0.1.0"
+      "description": "Collect, synthesize, and compile information: evidence scans, deep research, literature extraction, concept maps, source-backed writing, and multi-agent review.",
+      "version": "0.2.0"
+    },
+    {
+      "name": "web-dev",
+      "source": "./plugins/web-dev",
+      "description": "Web development with Figma: design-to-code, design-system rules, React performance, and UI/UX reviews.",
+      "version": "0.2.0"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "name": "ideas42-comms",
+  "version": "0.2.0",
+  "description": "Communicate in the ideas42 voice: internal communications formats, copy editing with ideas42 terminology and style, and learning support for team members.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "communications",
+    "learning",
+    "writing",
+    "skills",
+    "enterprise"
+  ]
+}

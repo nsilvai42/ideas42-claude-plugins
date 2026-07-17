@@ -1,0 +1,8 @@
+{
+  "name": "claude-ops",
+  "version": "0.2.0",
+  "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
+  "author": {
+    "name": "ideas42"
+  }
+}
