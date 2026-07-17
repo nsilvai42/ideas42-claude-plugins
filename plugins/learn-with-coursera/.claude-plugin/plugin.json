@@ -1,8 +1,0 @@
-{
-  "name": "learn-with-coursera",
-  "displayName": "Learn with Coursera",
-  "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step \u2014 a course, hands-on project, short video, or live roleplay \u2014 then maps a path forward. Requires the Coursera connector for catalog tools.",
-  "skills": [
-    "./learn-with-coursera"
-  ]
-}
