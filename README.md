@@ -4,6 +4,25 @@ A Claude plugin marketplace of **ideas42-specific** plugins — the skills that 
 
 Most plugins serve multiple stages of the IDEAS methodology (Identification, Diagnosis, Engineer, Assess, Scale & Sustain). Stage-specific methodology plugins (behavioral-diagnosis, intervention-design, experimental-design, scale-sustain) are planned — see [RECOMMENDATIONS.md](RECOMMENDATIONS.md).
 
+## Repository layout
+
+Skills are the source of truth; plugins are generated wrappers around them.
+
+```
+skills/<theme>/<skill>/          ← source of truth — edit here (grouped by theme)
+plugins/<plugin>/                ← marketplace wrappers (plugin.json, OVERVIEW.md, TEST_PROMPTS.md)
+plugins/<plugin>/skills/         ← GENERATED from skills/ — do not edit by hand
+scripts/sync-skills-to-plugins.sh  ← regenerates plugins/*/skills from skills/
+archived-plugins/                ← de-listed generic plugins, preserved (see its README)
+```
+
+Two ways to consume the same skills, no double-maintenance:
+
+- **Individual skills** (`skills/`) — broadest reach (Claude Code, Cowork, claude.ai web chat, API, Slack). See [`skills/README.md`](skills/README.md).
+- **Plugins** (`plugins/` via this marketplace) — one-click install and versioned updates for the Claude Code family (CLI + Cowork). Not available in claude.ai web chat.
+
+After editing any skill, run `bash scripts/sync-skills-to-plugins.sh` and bump the affected plugin + marketplace versions.
+
 ## Install (individuals)
 
 In Claude Code or Cowork:
