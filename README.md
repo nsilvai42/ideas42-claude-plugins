@@ -1,6 +1,8 @@
 # ideas42 Claude Plugins
 
-A Claude plugin marketplace of custom plugins built at ideas42, grouped by craft. Most crafts serve multiple stages of the IDEAS methodology (Identification, Diagnosis, Engineer, Assess, Scale & Sustain), so plugins are organized around what you're doing, not which stage you're in. Stage-specific methodology plugins (behavioral-diagnosis, intervention-design, experimental-design, scale-sustain) are planned — see [RECOMMENDATIONS.md](RECOMMENDATIONS.md).
+A Claude plugin marketplace of **ideas42-specific** plugins — the skills that encode ideas42 brand, voice, methodology, and workspace conventions, which you can't get anywhere else. Generic craft skills (data, design, research, connector automation, deliverables) are **not** re-hosted here: they come from Anthropic's Cowork skill bundle and community packs, and mirroring them would just add drift and maintenance with no ideas42 value. See [What's not here](#whats-not-here-and-why).
+
+Most plugins serve multiple stages of the IDEAS methodology (Identification, Diagnosis, Engineer, Assess, Scale & Sustain). Stage-specific methodology plugins (behavioral-diagnosis, intervention-design, experimental-design, scale-sustain) are planned — see [RECOMMENDATIONS.md](RECOMMENDATIONS.md).
 
 ## Install (individuals)
 
@@ -11,24 +13,35 @@ In Claude Code or Cowork:
 /plugin install brand-systems@ideas42-claude-plugins
 ```
 
+These plugins are meant to be **customized on install** — in Cowork, run the plugin customizer after installing to swap in your own tools, channels, and workspace values.
+
 ## Distribute org-wide (Team/Enterprise admins)
 
 Admins can add this repo as an organization plugin marketplace and choose which plugins members see, install themselves, or get auto-installed: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization).
 
-## Plugins (10)
+## Plugins (5)
 
-| Plugin | Craft | Skills |
-|--------|-------|--------|
-| **brand-systems** | Partner-facing deliverable branding | ideas42, SBNC, Bottom Line, Calbright, Year Up brand guidelines |
+| Plugin | What makes it ideas42's | Skills |
+|--------|-------------------------|--------|
+| **brand-systems** | Partner brand guidelines — pure ideas42 IP | ideas42, SBNC, Bottom Line, Calbright, Year Up brand guidelines |
 | **ideas42-comms** | Writing in the ideas42 voice | i42-copy-editor, internal-communications, learning-coach |
-| **research-evidence** | Collecting, synthesizing, compiling information | deep-research, article-extractor, concept-map, research-writer, agent-council |
-| **qualitative-research** | Qualitative fieldwork (all stages) | journey-mapping (user-testing, interview-guide, qualitative-synthesis planned) |
-| **quantitative-analysis** | Quantitative analysis (all stages) | data-cleaning, describe-sample, quick-csv-summary, verify-data-analysis, visualize |
-| **deliverables** | Producing polished outputs | doc-coauthoring, artifacts-builder, web-artifacts-builder, theme-factory, canvas-design, visual-design-foundations, image-enhancer, algorithmic-art, slack-gif-creator |
-| **claude-ops** | Claude workspace operations | project-setup, file-organizer, memory-import, memory-consolidation, schedule, setup-cowork, create-plugin, skill-lookup, review-console, review-council |
-| **web-dev** | Web development with Figma | figma-code-connect, figma-design-system-rules, figma-implement-design, react-performance, ui-ux-design-review, web-ui-review |
-| **connector-automation** | Automating connected tools | figma-automation, miro-automation, notion-automation, mcp-builder |
-| **notion-workflows** | Notion-based workflows | knowledge-capture, meeting-intelligence, research-documentation, spec-to-implementation |
+| **quantitative-analysis** | Data outputs styled with the ideas42 brand (Figtree, ideas42 palette, brand config) | data-cleaning, describe-sample, quick-csv-summary, verify-data-analysis, visualize |
+| **claude-ops** | Workspace operations tuned to how ideas42 works | project-setup, file-organizer, memory-import, memory-consolidation, schedule, setup-cowork, create-plugin, skill-lookup, review-console, review-council |
+| **qualitative-research** | Behaviorally-informed fieldwork (seed for the IDEAS-stage roadmap) | journey-mapping (user-testing, interview-guide, qualitative-synthesis planned) |
+
+## What's not here (and why)
+
+Five earlier plugins — `deliverables`, `research-evidence`, `web-dev`, `connector-automation`, `notion-workflows` (28 skills) — were **verbatim copies** of skills from Anthropic's Cowork bundle and community packs (e.g., [awesome-claude-skills](https://github.com/) for artifacts-builder, canvas-design, theme-factory, image-enhancer, and the figma/miro/notion automation skills). They carried **no ideas42-specific content**, so they've been moved to [`archived-plugins/`](archived-plugins/) and de-listed from the marketplace — preserved (nothing deleted), just no longer distributed as ideas42 plugins.
+
+To get that functionality, install the originals directly (so you inherit their updates), then customize on install:
+
+| Need | Get it from |
+|------|-------------|
+| Deliverables, artifacts, docs, themes, creative assets | Anthropic Cowork bundle (`artifact-production`, `document-production`) + community packs |
+| Research, synthesis, deep research, concept maps | Anthropic Cowork bundle / community research packs |
+| Figma web-dev, design-system rules, UI review | [Figma](https://github.com/figma/mcp-server-guide) + Anthropic `design` plugin |
+| Figma/Miro/Notion automation, MCP building | [awesome-claude-skills](https://github.com/) and vendor repos below |
+| Notion capture / meeting / spec workflows | Anthropic Cowork bundle (`notion-workflows`) |
 
 ## Third-party plugins (not mirrored here)
 
@@ -46,7 +59,8 @@ Maintained by their vendors — install from the in-app plugin directory or thei
 
 ## Conventions
 
-- One craft per plugin; each skill lives in exactly one plugin.
-- Stage-specific methodology (b-mapping, testing protocols) goes in a stage plugin; reusable craft (interviews, data cleaning, deliverables) goes in a craft plugin.
-- Bump the plugin version and marketplace version with every change so installed copies refresh.
+- **Only host what's ideas42's.** A skill belongs here if it encodes ideas42 brand, voice, methodology, or workspace conventions. If it's a generic craft skill, point to the upstream instead of copying it.
+- Stage-specific methodology (b-mapping, testing protocols) goes in a stage plugin; reusable ideas42 craft goes in a craft plugin.
+- Bump the plugin version and the marketplace version with every change so installed copies refresh.
+- Plugins are customized on install — keep org/personal specifics as `~~`-prefixed placeholders where possible so the Cowork customizer can fill them.
 - Plugins that require connectors note it in their description; users authenticate on first use.

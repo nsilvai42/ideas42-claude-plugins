@@ -5,8 +5,8 @@
     "email": "nsilva@ideas42.org"
   },
   "metadata": {
-    "description": "Custom Claude plugins built at ideas42, grouped by craft",
-    "version": "2.0.0"
+    "description": "ideas42-specific Claude plugins: brand systems, ideas42 voice, behaviorally-informed research and analysis, and workspace operations",
+    "version": "2.1.0"
   },
   "plugins": [
     {
@@ -16,58 +16,28 @@
       "version": "0.1.0"
     },
     {
-      "name": "claude-ops",
-      "source": "./plugins/claude-ops",
-      "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
-      "version": "0.2.0"
-    },
-    {
-      "name": "connector-automation",
-      "source": "./plugins/connector-automation",
-      "description": "Optional connector-dependent automation wrappers for Figma, Miro, Notion, and MCP-building work.",
-      "version": "0.1.0"
-    },
-    {
-      "name": "deliverables",
-      "source": "./plugins/deliverables",
-      "description": "Produce polished deliverables: HTML artifacts and dashboards, document co-authoring, visual design foundations, themes, image enhancement, and creative assets.",
-      "version": "0.2.0"
-    },
-    {
       "name": "ideas42-comms",
       "source": "./plugins/ideas42-comms",
       "description": "Communicate in the ideas42 voice: internal communications formats, copy editing with ideas42 terminology and style, and learning support for team members.",
       "version": "0.2.0"
     },
     {
-      "name": "notion-workflows",
-      "source": "./plugins/notion-workflows",
-      "description": "Optional Notion-backed capture, meeting prep, research documentation, and spec-to-implementation workflows.",
-      "version": "0.1.0"
+      "name": "quantitative-analysis",
+      "source": "./plugins/quantitative-analysis",
+      "description": "Quantitative analysis with ideas42 brand-styled outputs, used across all IDEAS stages: data cleaning, sample description, CSV profiling, verification of AI-generated analyses, and visualization.",
+      "version": "0.2.0"
+    },
+    {
+      "name": "claude-ops",
+      "source": "./plugins/claude-ops",
+      "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
+      "version": "0.2.0"
     },
     {
       "name": "qualitative-research",
       "source": "./plugins/qualitative-research",
-      "description": "Qualitative fieldwork used across all IDEAS stages. Journey mapping today; user testing, interview guides, and qualitative synthesis planned \u2014 see RECOMMENDATIONS.md.",
+      "description": "Qualitative fieldwork used across all IDEAS stages. Journey mapping today; user testing, interview guides, and qualitative synthesis planned — see RECOMMENDATIONS.md.",
       "version": "0.1.0"
-    },
-    {
-      "name": "quantitative-analysis",
-      "source": "./plugins/quantitative-analysis",
-      "description": "Quantitative analysis used across all IDEAS stages: data cleaning, sample description, CSV profiling, verification of AI-generated analyses, and visualization.",
-      "version": "0.2.0"
-    },
-    {
-      "name": "research-evidence",
-      "source": "./plugins/research-evidence",
-      "description": "Collect, synthesize, and compile information: evidence scans, deep research, literature extraction, concept maps, source-backed writing, and multi-agent review.",
-      "version": "0.2.0"
-    },
-    {
-      "name": "web-dev",
-      "source": "./plugins/web-dev",
-      "description": "Web development with Figma: design-to-code, design-system rules, React performance, and UI/UX reviews.",
-      "version": "0.2.0"
     }
   ]
 }
