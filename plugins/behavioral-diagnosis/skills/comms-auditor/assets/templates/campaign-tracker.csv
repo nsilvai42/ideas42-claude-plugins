@@ -1,0 +1,2 @@
+comm_id,label,channel,audience_segment,trigger_timing,owner,source,status
+C01,,email,,,,,queued

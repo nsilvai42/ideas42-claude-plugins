@@ -1,15 +1,17 @@
-# Brand Systems
+# brand-systems
 
-Shared brand guardrails for the recurring organizations in the workspace.
+Partner and ideas42 brand guidelines, the most-shared skills in the marketplace. Pure ideas42 IP.
+
+**Framework domain:** Design (cross-cutting craft) · **IDEAS stage(s):** Engineer
 
 ## Included skills
 
-- `ideas42-brand`
-- `year-up-brand`
-- `calbright-brand`
 - `bottom-line-brand`
+- `calbright-brand`
+- `ideas42-brand`
 - `sbnc-brand`
+- `year-up-brand`
 
 ## Provisioning note
 
-Provision this plugin only to users whose work matches the workflow. Avoid enabling every plugin globally; narrower bundles reduce accidental triggers and connector confusion.
+Provision this plugin to the people whose work matches the domain. Narrower bundles reduce accidental triggers and connector confusion; the brand-systems plugin is the one most people need.

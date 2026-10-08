@@ -1,15 +1,15 @@
 {
   "name": "ideas42-comms",
-  "version": "0.2.0",
-  "description": "Communicate in the ideas42 voice: internal communications formats, copy editing with ideas42 terminology and style, and learning support for team members.",
+  "version": "0.3.0",
+  "description": "Framework domain: Governance floor and Communications craft. Write in the ideas42 voice: copy editing, internal communications formats, learning support, and removing AI-tell patterns from drafts.",
   "author": {
     "name": "ideas42"
   },
   "keywords": [
     "communications",
-    "learning",
     "writing",
-    "skills",
-    "enterprise"
+    "voice",
+    "learning",
+    "skills"
   ]
 }

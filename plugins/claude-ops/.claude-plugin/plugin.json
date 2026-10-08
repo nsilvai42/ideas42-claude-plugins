@@ -1,8 +1,16 @@
 {
   "name": "claude-ops",
-  "version": "0.2.0",
-  "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
+  "version": "0.3.0",
+  "description": "Framework domain: Implementation. Claude workspace operations tuned to how ideas42 works: project setup, memory import and consolidation, file organizing, scheduling, Cowork setup, and plugin and skill tooling.",
   "author": {
     "name": "ideas42"
-  }
+  },
+  "keywords": [
+    "workspace",
+    "claude",
+    "setup",
+    "memory",
+    "plugins",
+    "skills"
+  ]
 }

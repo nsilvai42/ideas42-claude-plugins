@@ -1,0 +1,66 @@
+{
+  "skill_name": "pick-model-and-effort",
+  "note": "Functional evals — test that the skill routes surface/model/effort correctly and elicits when vague. Triggering is evaluated separately (description-optimization pass).",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I need to clean up and shorten a 2-page memo before sending it to my director. Which model and effort should I use?",
+      "expected_output": "Chat (or Cowork if it's a file) · Sonnet · Low/Medium. Not Opus. Concise verdict, no how-to-edit essay.",
+      "assertions": [
+        "Recommends Chat or Cowork as the surface (not Code or Design)",
+        "Recommends Sonnet as the model (not Opus)",
+        "Stays concise and in-lane — a tight setup verdict, not a long how-to-do-the-task essay"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I'm pulling together a complicated analysis for a grant proposal — several data files, competing interpretations, and a written findings section. What's the best setup?",
+      "expected_output": "Cowork (several data files) or Chat · Opus · High/Extra. The open-ended synthesis justifies Opus.",
+      "assertions": [
+        "Recommends Cowork or Chat as the surface (not Code or Design)",
+        "Recommends Opus as the model",
+        "Recommends High or Extra effort"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I just need to convert a few bullet points into a short paragraph for a Slack message. What should I use?",
+      "expected_output": "Chat · Haiku · Extended thinking off. Surfaces Haiku confidently (the blindspot case).",
+      "assertions": [
+        "Recommends Chat as the surface (not Cowork, Code, or Design)",
+        "Recommends Haiku as the model",
+        "Recommends Haiku's fast setting (Extended thinking off)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want to make a polished one-page infographic of our program outcomes to share with funders. What's the best way to do this in Claude?",
+      "expected_output": "Claude Design · a named model (Sonnet or Opus). Notes Design is browser-only.",
+      "assertions": [
+        "Recommends Claude Design as the surface",
+        "Notes Claude Design is browser-only (web, not the desktop app or Code)",
+        "Names a specific model (Sonnet or Opus) for it"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I need to refactor and migrate a Python data pipeline spread across about 30 files in my repo. What setup do you recommend?",
+      "expected_output": "Code (touches a repo) · a named model + effort appropriate to a multi-file refactor (Sonnet or Opus; Opus/Ultracode reasonable for the scale).",
+      "assertions": [
+        "Recommends Code as the surface",
+        "Names a specific model and effort appropriate to a multi-file refactor",
+        "Stays concise and in-lane (a setup verdict, not a migration tutorial)"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "What should I use for my new project?",
+      "expected_output": "Elicits first — asks about task type, expected output, and whether it touches files/apps/repo — rather than guessing a full setup.",
+      "assertions": [
+        "Asks clarifying questions before recommending, rather than guessing a full setup",
+        "The questions cover the routing signals: task type, expected output, and whether it touches files/apps or a repo",
+        "Does not commit to a specific surface/model/effort without the missing info"
+      ]
+    }
+  ]
+}

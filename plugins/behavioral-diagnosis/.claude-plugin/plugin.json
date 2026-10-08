@@ -1,0 +1,16 @@
+{
+  "name": "behavioral-diagnosis",
+  "version": "0.1.0",
+  "description": "Framework domains: Implementation and Design. ideas42 diagnosis tools, starting with the behavioral communications auditor. B-mapping, process-mapping auditing, and the behavioral-concepts canon are scoped next.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "behavioral science",
+    "diagnosis",
+    "communications",
+    "audit",
+    "ideas42",
+    "skills"
+  ]
+}

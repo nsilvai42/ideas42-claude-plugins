@@ -1,15 +1,15 @@
 {
   "name": "brand-systems",
-  "version": "0.1.0",
-  "description": "Brand rules for ideas42, Year Up, Calbright, Bottom Line, and SBNC/Navvy artifacts.",
+  "version": "0.2.0",
+  "description": "Framework domain: Design. Brand rules for ideas42, Year Up, Calbright, Bottom Line, and SBNC/Navvy, applied to any deliverable.",
   "author": {
-    "name": "Nikolassilva"
+    "name": "ideas42"
   },
   "keywords": [
     "brand",
-    "visual-identity",
-    "enterprise",
-    "skills",
-    "enterprise"
+    "design",
+    "ideas42",
+    "partners",
+    "skills"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "governance",
+  "version": "0.1.0",
+  "description": "Framework domain: Governance. The verification backbone and responsible-use defaults: structured multi-reviewer QA, a review console for comparing options, and choosing the right Claude surface, model, and effort.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "governance",
+    "verification",
+    "review",
+    "quality",
+    "responsible ai",
+    "skills"
+  ]
+}

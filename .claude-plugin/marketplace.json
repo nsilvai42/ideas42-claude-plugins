@@ -5,39 +5,45 @@
     "email": "nsilva@ideas42.org"
   },
   "metadata": {
-    "description": "ideas42-specific Claude plugins: brand systems, ideas42 voice, behaviorally-informed research and analysis, and workspace operations",
-    "version": "2.1.0"
+    "description": "ideas42-specific Claude plugins organized by the AI Builders framework domains: brand, communications, research and evaluation, behavioral diagnosis, governance, and workspace operations.",
+    "version": "3.0.0"
   },
   "plugins": [
     {
       "name": "brand-systems",
       "source": "./plugins/brand-systems",
-      "description": "Brand rules for ideas42, Year Up, Calbright, Bottom Line, and SBNC/Navvy artifacts.",
-      "version": "0.1.0"
+      "description": "Framework domain: Design. Brand rules for ideas42, Year Up, Calbright, Bottom Line, and SBNC/Navvy, applied to any deliverable.",
+      "version": "0.2.0"
     },
     {
       "name": "ideas42-comms",
       "source": "./plugins/ideas42-comms",
-      "description": "Communicate in the ideas42 voice: internal communications formats, copy editing with ideas42 terminology and style, and learning support for team members.",
-      "version": "0.2.0"
+      "description": "Framework domain: Governance floor and Communications craft. Write in the ideas42 voice: copy editing, internal communications formats, learning support, and removing AI-tell patterns from drafts.",
+      "version": "0.3.0"
     },
     {
-      "name": "quantitative-analysis",
-      "source": "./plugins/quantitative-analysis",
-      "description": "Quantitative analysis with ideas42 brand-styled outputs, used across all IDEAS stages: data cleaning, sample description, CSV profiling, verification of AI-generated analyses, and visualization.",
-      "version": "0.2.0"
+      "name": "research-and-evaluation",
+      "source": "./plugins/research-and-evaluation",
+      "description": "Framework domains: Research and Evaluation (REL). Evidence scans, quantitative data cleaning and description, verification of AI-generated analyses, visualization, and qualitative journey mapping.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "behavioral-diagnosis",
+      "source": "./plugins/behavioral-diagnosis",
+      "description": "Framework domains: Implementation and Design. ideas42 diagnosis tools, starting with the behavioral communications auditor. B-mapping, process-mapping auditing, and the behavioral-concepts canon are scoped next.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "governance",
+      "source": "./plugins/governance",
+      "description": "Framework domain: Governance. The verification backbone and responsible-use defaults: structured multi-reviewer QA, a review console for comparing options, and choosing the right Claude surface, model, and effort.",
+      "version": "0.1.0"
     },
     {
       "name": "claude-ops",
       "source": "./plugins/claude-ops",
-      "description": "Claude workspace operations: project setup, file organizing, memory management, scheduling, plugin and skill tooling, and structured review workflows.",
-      "version": "0.2.0"
-    },
-    {
-      "name": "qualitative-research",
-      "source": "./plugins/qualitative-research",
-      "description": "Qualitative fieldwork used across all IDEAS stages. Journey mapping today; user testing, interview guides, and qualitative synthesis planned — see RECOMMENDATIONS.md.",
-      "version": "0.1.0"
+      "description": "Framework domain: Implementation. Claude workspace operations tuned to how ideas42 works: project setup, memory import and consolidation, file organizing, scheduling, Cowork setup, and plugin and skill tooling.",
+      "version": "0.3.0"
     }
   ]
 }

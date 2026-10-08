@@ -1,0 +1,16 @@
+{
+  "name": "research-and-evaluation",
+  "version": "0.1.0",
+  "description": "Framework domains: Research and Evaluation (REL). Evidence scans, quantitative data cleaning and description, verification of AI-generated analyses, visualization, and qualitative journey mapping.",
+  "author": {
+    "name": "ideas42"
+  },
+  "keywords": [
+    "research",
+    "evaluation",
+    "data",
+    "evidence",
+    "qualitative",
+    "skills"
+  ]
+}

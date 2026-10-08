@@ -19,9 +19,10 @@ cd "$(dirname "$0")/.."
 MAP="
 brand:brand-systems
 communications:ideas42-comms
-data-analysis:quantitative-analysis
+research-evaluation:research-and-evaluation
+behavioral-diagnosis:behavioral-diagnosis
+governance:governance
 workspace-ops:claude-ops
-qualitative-research:qualitative-research
 "
 
 echo "$MAP" | while IFS=: read -r theme plugin; do

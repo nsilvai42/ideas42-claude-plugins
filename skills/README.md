@@ -6,13 +6,16 @@ Skills reach more surfaces than plugins: they work in Claude Code, Cowork, **cla
 
 ## Themes
 
+Themes follow the AI Builders framework domains.
+
 | Theme | Skills | Shipped in plugin |
 |-------|--------|-------------------|
 | `brand/` | bottom-line-brand, calbright-brand, ideas42-brand, sbnc-brand, year-up-brand | `brand-systems` |
-| `communications/` | i42-copy-editor, internal-communications, learning-coach | `ideas42-comms` |
-| `data-analysis/` | data-cleaning, describe-sample, quick-csv-summary, verify-data-analysis, visualize | `quantitative-analysis` |
-| `workspace-ops/` | project-setup, file-organizer, memory-import, memory-consolidation, schedule, setup-cowork, create-plugin, skill-lookup, review-console, review-council | `claude-ops` |
-| `qualitative-research/` | journey-mapping | `qualitative-research` |
+| `communications/` | anti-ai-writing, i42-copy-editor, internal-communications, learning-coach | `ideas42-comms` |
+| `research-evaluation/` | data-cleaning, deep-research, describe-sample, journey-mapping, quick-csv-summary, verify-data-analysis, visualize | `research-and-evaluation` |
+| `behavioral-diagnosis/` | comms-auditor | `behavioral-diagnosis` |
+| `governance/` | review-console, review-council, right-size-setup | `governance` |
+| `workspace-ops/` | create-plugin, file-organizer, memory-consolidation, memory-import, project-setup, schedule, setup-cowork, skill-lookup | `claude-ops` |
 
 ## Sharing an individual skill
 

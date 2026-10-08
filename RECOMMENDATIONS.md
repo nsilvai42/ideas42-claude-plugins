@@ -4,7 +4,7 @@ Proposed additions to this marketplace where no skill exists yet. Each entry nam
 
 ## Fill out existing plugins
 
-### qualitative-research (exists, 1 skill today)
+### research-and-evaluation (exists; qualitative side has 1 skill today)
 | Proposed skill | What it does | Why |
 |---|---|---|
 | user-testing | Design user testing protocols (including remote), moderate sessions, capture findings against design hypotheses | Testing designs with end users spans Diagnosis, Engineer, and Assess; the wiki has remote user-testing recommendations to distill |
@@ -19,7 +19,7 @@ Proposed additions to this marketplace where no skill exists yet. Each entry nam
 
 ## New plugins to build
 
-### behavioral-diagnosis (Diagnosis-stage methodology)
+### behavioral-diagnosis (Diagnosis-stage methodology; exists since v3.0.0, seeded with comms-auditor)
 The methodology itself — distinct from the qualitative/quantitative crafts used within it.
 | Proposed skill | What it does | Why |
 |---|---|---|
@@ -69,9 +69,11 @@ The methodology itself — distinct from the qualitative/quantitative crafts use
 ## Build order suggestion
 
 1. behavioral-diagnosis (b-mapping is the most distinctive, highest-leverage ideas42 method; the canon reference skill improves every other output)
-2. qualitative-research fill-out (Niko flagged this gap directly)
+2. research-and-evaluation qualitative fill-out (Niko flagged this gap directly)
 3. show-dont-tell-presentations (touches every project team weekly)
 4. experimental-design, then intervention-design, then scale-sustain
 5. Role plugins (biz-dev, people-ops) as demand appears
+
+Skills in `incubator/` (voice-setup, design-facilitator, shared-project-kit) are candidates for ideas42-comms, intervention-design, and claude-ops respectively.
 
 Conventions when adding: one craft per plugin; a skill lives in exactly one plugin; stage-specific methodology goes in the stage plugin, reusable craft goes in the craft plugin; bump the plugin version and the marketplace version on every change.
